@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update --no-cache git dcron rsyslog netcat-openbsd curl python2 gnupg
+RUN apk add --update --no-cache git git-lfs dcron rsyslog netcat-openbsd curl python2 gnupg
 RUN python -m ensurepip --upgrade
 
 RUN curl http://cgit.legato/external/repo.git/plain/repo > repo
